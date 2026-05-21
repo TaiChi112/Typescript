@@ -1,0 +1,346 @@
+# Instincts generated from https://github.com/TaiChi112/TYPESCRIPT
+# Generated: 2026-05-21T18:17:41.452Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: TYPESCRIPT-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/TaiChi112/TYPESCRIPT
+---
+
+# TYPESCRIPT Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: build
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: build(deps): bump the npm_and_yarn group across 30 directories with 3 updates
+
+---
+id: TYPESCRIPT-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/TaiChi112/TYPESCRIPT
+---
+
+# TYPESCRIPT Commit Length
+
+## Action
+
+Write moderate-length commit messages (~77 characters)
+
+## Evidence
+
+- Average commit message length: 77 chars
+- Based on 1 commits
+
+---
+id: TYPESCRIPT-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/TaiChi112/TYPESCRIPT
+---
+
+# TYPESCRIPT Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: TYPESCRIPT-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/TaiChi112/TYPESCRIPT
+---
+
+# TYPESCRIPT Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: TYPESCRIPT-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/TaiChi112/TYPESCRIPT
+---
+
+# TYPESCRIPT Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: TYPESCRIPT-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/TaiChi112/TYPESCRIPT
+---
+
+# TYPESCRIPT Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: TYPESCRIPT-workflow-dependency-upgrade-across-multiple-packages
+trigger: "when doing dependency upgrade across multiple packages"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/TaiChi112/TYPESCRIPT
+---
+
+# TYPESCRIPT Workflow Dependency Upgrade Across Multiple Packages
+
+## Action
+
+Follow the dependency-upgrade-across-multiple-packages workflow:
+1. Detect outdated dependencies in multiple project directories.
+2. Update package.json with new dependency versions in each affected directory.
+3. Update corresponding lock files (package-lock.json, pnpm-lock.yaml) in each directory.
+4. Commit all changes together with a detailed changelog.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: **/package.json, **/package-lock.json, **/pnpm-lock.yaml
+
+---
+id: typescript-instinct-naming-files
+trigger: "When creating or renaming a file"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Naming Files
+
+## Action
+
+Use camelCase for file names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: typescript-instinct-naming-functions
+trigger: "When defining a function"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Naming Functions
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: typescript-instinct-naming-classes
+trigger: "When defining a class"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Naming Classes
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: typescript-instinct-naming-constants
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Naming Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: typescript-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: typescript-instinct-export-style
+trigger: "When exporting modules or symbols"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: typescript-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: typescript-instinct-git-commit-format
+trigger: "When making a git commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Git Commit Format
+
+## Action
+
+Use conventional commit format with type prefix (e.g., build: ...)
+
+## Evidence
+
+- Pattern in commits.type
+- Example: build(deps): bump the npm_and_yarn group...
+
+---
+id: typescript-instinct-git-commit-prefix-build
+trigger: "When committing dependency upgrades or build-related changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Git Commit Prefix Build
+
+## Action
+
+Prefix commit message with build: or build(deps):
+
+## Evidence
+
+- Pattern in commits.prefixes
+- Example: build(deps): bump the npm_and_yarn group...
+
+---
+id: typescript-instinct-dependency-upgrade-workflow
+trigger: "When a new version of a dependency is released and needs to be applied across many packages/repos"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: TaiChi112/TYPESCRIPT
+---
+
+# Typescript Instinct Dependency Upgrade Workflow
+
+## Action
+
+Run the dependency-upgrade-across-multiple-packages workflow: detect outdated dependencies, update package.json and lock files in each directory, and commit all changes together with a detailed changelog
+
+## Evidence
+
+- workflow: dependency-upgrade-across-multiple-packages
+- commits with build(deps): prefix
+- files: **/package.json, **/package-lock.json, **/pnpm-lock.yaml
+
